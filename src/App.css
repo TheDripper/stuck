@@ -1,0 +1,56 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.post {
+	background-size: cover;
+	background-position: center;
+	width: 200px;
+	height: 200px;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: cyan;
+	cursor: pointer;
+	transition: all 0.2s ease;
+}
+.post h1 {
+	font-size: 50px;
+	transition: all 0.2s ease;
+	background-image: linear-gradient(to top,rgba(44,14,83,0.7),rgba(44,14,83,0.7));
+}
+.post:hover {
+	width: 300px;
+	height: 300px;
+	position: relative;
+	z-index: 99;
+}
+.post:hover h1 {
+	font-size: 24px;
+	background-image: linear-gradient(to top,rgba(44,14,83,1),rgba(44,14,83,1));
+}
